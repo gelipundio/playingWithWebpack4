@@ -8,12 +8,15 @@
     "build": "webpack --entry ./index.js --output ./bundle.js --mode development",
     "build:local": "webpack",
     "build:external": "webpack --config ./external/webpack.config.js",
-    "build:multiple": "webpack --config ./multi-entry-point/webpack.config.js"
+    "build:multiple": "webpack --config ./multi-entry-point/webpack.config.js",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "css-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5"
   }
